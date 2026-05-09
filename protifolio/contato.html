@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com Wisley Miguel - QA Engineer">
+  <meta name="keywords" content="contato, QA Engineer, Wisley Miguel, Belo Horizonte">
+  <meta name="author" content="Wisley Miguel">
+  <title>Contato | Wisley Miguel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">WM<span class="dot">.</span></div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+      <li><a href="contato.html" class="active">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <h1>Entre em <span class="accent">Contato</span></h1>
+    <p>Vamos conversar sobre oportunidades ou projetos</p>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <h2>Vamos trabalhar juntos?</h2>
+        <p>Estou disponível para oportunidades em QA, automação de testes e desenvolvimento front-end.</p>
+        <div class="contact-links">
+          <a href="https://github.com/wisleymiguel" target="_blank" class="contact-link">
+            <span class="contact-icon">🐙</span> GitHub
+          </a>
+          <a href="https://linkedin.com/in/wisley-miguel" target="_blank" class="contact-link">
+            <span class="contact-icon">💼</span> LinkedIn
+          </a>
+          <a href="mailto:wisley@email.com" class="contact-link">
+            <span class="contact-icon">✉️</span> E-mail
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <div id="form-success" class="form-success hidden">
+          ✅ Mensagem enviada com sucesso! Obrigado pelo contato.
+        </div>
+        <div id="contact-form">
+          <div class="form-group">
+            <label for="nome">Nome *</label>
+            <input type="text" id="nome" placeholder="Seu nome completo">
+            <span class="error-msg" id="erro-nome"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" placeholder="seu@email.com">
+            <span class="error-msg" id="erro-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="assunto">Assunto *</label>
+            <input type="text" id="assunto" placeholder="Sobre o que quer falar?">
+            <span class="error-msg" id="erro-assunto"></span>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem *</label>
+            <textarea id="mensagem" rows="5" placeholder="Sua mensagem..."></textarea>
+            <span class="error-msg" id="erro-mensagem"></span>
+          </div>
+          <button class="btn-primary" id="btn-enviar" onclick="validarFormulario()">Enviar Mensagem</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Wisley Miguel — Feito com HTML5, CSS3 & JS</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

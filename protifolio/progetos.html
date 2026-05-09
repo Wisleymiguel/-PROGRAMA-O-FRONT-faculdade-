@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projetos de Wisley Miguel - QA Engineer com foco em automação de testes">
+  <meta name="keywords" content="projetos, QA, automação, Cypress, portfólio">
+  <meta name="author" content="Wisley Miguel">
+  <title>Projetos | Wisley Miguel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">WM<span class="dot">.</span></div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="projetos.html" class="active">Projetos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <h1>Meus <span class="accent">Projetos</span></h1>
+    <p>Trabalhos desenvolvidos durante minha formação</p>
+  </section>
+
+  <!-- FILTROS -->
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">Todos</button>
+    <button class="filter-btn" data-filter="qa">QA</button>
+    <button class="filter-btn" data-filter="front">Front-End</button>
+  </div>
+
+  <section class="projects-section">
+    <div class="projects-grid">
+
+      <div class="project-card" data-category="qa">
+        <div class="project-badge">QA</div>
+        <h3>Sistema de E-commerce — Testes E2E</h3>
+        <p>Suite completa de testes automatizados para um e-commerce fictício, cobrindo fluxo de compra, login e carrinho.</p>
+        <div class="project-tags">
+          <span>Cypress</span><span>JavaScript</span><span>GitHub Actions</span>
+        </div>
+        <a href="#" class="btn-outline-sm">Ver Projeto</a>
+      </div>
+
+      <div class="project-card" data-category="qa">
+        <div class="project-badge">QA</div>
+        <h3>API Testing — Validação REST</h3>
+        <p>Testes automatizados de API REST com validação de contratos, status codes e payloads JSON.</p>
+        <div class="project-tags">
+          <span>Postman</span><span>JavaScript</span><span>Newman</span>
+        </div>
+        <a href="#" class="btn-outline-sm">Ver Projeto</a>
+      </div>
+
+      <div class="project-card" data-category="front">
+        <div class="project-badge">Front</div>
+        <h3>Portfólio Pessoal</h3>
+        <p>Este mesmo site — desenvolvido como atividade prática da disciplina de Programação Front-End na UniCesumar.</p>
+        <div class="project-tags">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+        </div>
+        <a href="#" class="btn-outline-sm">Ver Projeto</a>
+      </div>
+
+      <div class="project-card" data-category="front">
+        <div class="project-badge">Front</div>
+        <h3>Landing Page — Produto SaaS</h3>
+        <p>Landing page responsiva para um produto SaaS fictício, com animações CSS e formulário de captura.</p>
+        <div class="project-tags">
+          <span>HTML5</span><span>CSS3</span><span>jQuery</span>
+        </div>
+        <a href="#" class="btn-outline-sm">Ver Projeto</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Wisley Miguel — Feito com HTML5, CSS3 & JS</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
